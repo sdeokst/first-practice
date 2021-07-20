@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2 </title>
+</head>
+<body>
+    <p>액션</p>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <!--액션이 뭔지는 이제 알겠음-->
+    </form> 
+    <p>타겟</p>
+    <form action="/action_page.php" target="_blank">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <!--페이지 이동의 개념이라는 것이 단순히 자료를 전송한 후에 페이지를
+             연다라면 중간에 받아주는 다른 프로그램? 도 존재해야하는것이 아닌지?-->
+    </form> 
+      <!--URL지정이라면 내가 마케팅쪽에서 배웠던 URL지정을 통한 유입경로 추적을 이걸로 응용하는 것인지?-->
+    <p>겟</p>
+    <form action="/action_page.php" target="_blank" method="get">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <!--post 메소드는 확인을 좀 해봐야겠음 디테일하게 뭐가 다른 것인지 잘 모르겠단 말이지-->
+    <p>포스트</p>
+    <form action="/action_page.php" target="_blank" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>auto on</p>
+    <form action="/action_page.php" autocomplete="on">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <input type="submit">
+    </form>
+    <p>auto off</p>
+    <form action="/action_page.php" autocomplete="off">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <input type="submit">
+    </form>
+    <p>유효성 검사 안함? 이게 어떤 뜻인지? 유효성이라는 말에 대한 개념 필요, 그래야 무효화를 알듯</p>
+    <form action="/action_page.php" novalidate>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

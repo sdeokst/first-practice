@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h2>기본양식(text)</h2>
+    <form>
+        <label for="fname">first name :</label><br>
+        <input type="text" id="fname" name="fname" value="seongdeok"><br>
+        <label for="lname">last name : </label><br>
+        <input type="text" id="lname" name="lname" value="kim"><br>
+        
+        <p>Choose your favorite Web language :(폐이보륏 랑퀴지 예시)</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+
+        <p>폼테그에 php링크 없이 가능한지 확인<!--<form action="/action_page.php"></form>--></p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+        
+        <p>오호 액션은 이럴서밋때문에 쓰는 것이었군 알콜프리 예아~</p>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <!--그렇다면 알콜프리인데 취하는 느낌으로 서밋에 대한 함수이용방식으로 php를 사용하는 것인지?-->
+        <p>필드 경로로써의 역할을 한다...대충 알겠음 좀 더 사용해보면서 활용해보는게 좋을거같군</p>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" value="John"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

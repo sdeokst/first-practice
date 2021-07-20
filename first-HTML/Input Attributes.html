@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input attribute</title>
+</head>
+<body>
+    <p>기본값 설정!</p>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="seongdeok"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="kim">
+    </form>
+    <p>읽기전용 인풋이라는데 이게 왜 존재하는건지? 읽기전용이면 인풋이 필요한가?</p>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="넌 못적는다" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="수정해보아라"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>필드값 비활성화</p>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+    <p>입력창 사이즈</p>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4">
+    </form>
+    <p>맥시멈 길이 설정</p>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4">
+    </form>
+    <p>입력값 한도 설정</p>
+    <form action="/action_page.php">
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+      
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+      
+        <input type="submit" value="Submit">
+    </form>
+    <p>문자열 패턴에 따른 결과물제한</p>
+    <form action="/action_page.php">
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p></p>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+    </form>
+</body>
+</html>
